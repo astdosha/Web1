@@ -1,0 +1,160 @@
+:root {
+    font-size: 62.5%;
+    --primery-color: black;
+    --two-color: white;
+}
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button-paint {
+    height: 25px;
+    width: 110px;
+    color: var(--two-color);
+    background-color: #4BA87D;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.button-paint1 {
+    height: 42px;
+    width: 144px;
+    color: var(--two-color);
+    background-color: #4BA87D;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.link-butt1{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    color: var(--two-color);
+    background-color: #4BA87D;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.link-butt2 {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    border: 3px solid #4BA87D;
+    color: #4BA87D;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-butt3{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--two-color);
+    color: #4BA87D;
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+.link1 {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    color: #4BA87D;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.link2 {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    color: #4BA87D;
+    background-color: var(--two-color);
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.brands-link{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    color: var(--primery-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primery-color);
+    font-size: 3.6rem;
+}
+
+.heading-1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--two-color);
+    font-size: 2.2rem;
+}
+
+.heading-2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primery-color);
+    font-size: 2.6rem;
+}
+
+.heading-3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: var(--two-color);
+    font-size: 4.2rem;
+    align-items: center;
+}
+
+.title_link {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    color: var(--primery-color);
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.section{
+    background-color: #4BA87D;
+    height: 290px;
+    width: 320px;
+}
+
+.text-footer{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    color: var(--primery-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
