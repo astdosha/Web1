@@ -2,11 +2,11 @@
     font-size: 62.5%;
     --primery-color: black;
     --two-color: white;
+    --green-color: #4BA87D;
 }
 
 
 body {
-    font-family: 'Playfair Display', serif;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
@@ -26,79 +26,127 @@ body {
     overflow: hidden;
 }
 
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 16px auto;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-block;
+    width: max-content;
+    box-sizing: border-box;
+}
+
 .button-paint {
+    display: inline-block;
+    margin-right: 12px;
     height: 25px;
     width: 110px;
     color: var(--two-color);
-    background-color: #4BA87D;
+    background-color: var(--green-color);
     border: none;
     font-size: 1.1rem;
     font-weight: 800;
-    text-decoration: none;
 }
 
 .button-paint1 {
     height: 42px;
     width: 144px;
     color: var(--two-color);
-    background-color: #4BA87D;
+    background-color: var(--green-color);
     border: none;
     font-size: 1.1rem;
     font-weight: 800;
     text-decoration: none;
 }
 
-.link-butt1{
-    font-family: 'Playfair Display', serif;
+.div-link-butt-1-2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 16px auto;
+    justify-content: space-between;
+}
+
+.link-butt1 {
     font-family: 'Raleway', sans-serif;
     color: var(--two-color);
-    background-color: #4BA87D;
+    background-color: var(--green-color);
     font-weight: 700;
     text-decoration: none;
     font-size: 1.3rem;
+    padding: 13px 40px;
+    margin-left: auto;
 }
 
 .link-butt2 {
-    font-family: 'Playfair Display', serif;
     font-family: 'Raleway', sans-serif;
-    border: 3px solid #4BA87D;
-    color: #4BA87D;
+    border: 3px solid var(--green-color);
+    color: var(--green-color);
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
+    padding: 10px 27px;
+    margin-right: auto;
 }
 
-.link-butt3{
-    font-family: 'Playfair Display', serif;
+.link-butt3 {
+    position: absolute;
     font-family: 'Raleway', sans-serif;
     background-color: var(--two-color);
-    color: #4BA87D;
+    color: var(--green-color);
     font-weight: 700;
     font-size: 0.6rem;
     text-decoration: none;
+    padding: 7px 13px;
+    margin-bottom: -85px;
+}
+
+.div-card1 {
+    display: flex;
+    width: 209px;
+    height: 294px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--two-color);
+}
+
+.card-description {
+    display: block;
+    margin: 0%;
+    width: 164px;
+    margin: 17px 25px 17px 20px;
 }
 
 .link1 {
-    font-family: 'Playfair Display', serif;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
-    color: #4BA87D;
+    color: var(--green-color);
     font-weight: 800;
     font-size: 1.2rem;
     text-decoration: none;
+    margin: 0% 25px 13px 20px;
 }
 
 .link2 {
-    font-family: 'Playfair Display', serif;
     font-family: 'Raleway', sans-serif;
-    color: #4BA87D;
+    color: var(--green-color);
     background-color: var(--two-color);
     font-weight: 900;
     font-size: 1.3rem;
     text-decoration: none;
 }
 
-.brands-link{
-    font-family: 'Playfair Display', serif;
+.brands-link {
+
     font-family: 'Raleway', sans-serif;
     color: var(--primery-color);
     font-size: 1.2rem;
@@ -108,27 +156,86 @@ body {
 }
 
 .heading {
+    display: block;
+    position: absolute;
+    margin-top: -50px;
+    line-height: 46px;
+    padding-right: 27px;
+    padding-left: 8px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--primery-color);
     font-size: 3.6rem;
+    z-index: 9999;
+}
+
+.image-girl {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 9px; */
+    align-items: center;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.image-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 42px;
+}
+
+.image-video {
+    display: flex;
+    width: max-content;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heading-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--two-color);
     font-size: 2.2rem;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.div-heading-2 {
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 17px;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .heading-2 {
+    display: block;
+    /* width: 232px; */
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--primery-color);
     font-size: 2.6rem;
+    margin: 0%;
 }
 
-.heading-3{
+.heading-3 {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     color: var(--two-color);
@@ -137,7 +244,6 @@ body {
 }
 
 .title_link {
-    font-family: 'Playfair Display', serif;
     font-family: 'Raleway', sans-serif;
     color: var(--primery-color);
     font-size: 2.2rem;
@@ -145,16 +251,21 @@ body {
     text-decoration: none;
 }
 
-.section{
-    background-color: #4BA87D;
-    height: 290px;
+.section {
+    background-color: var(--green-color);
     width: 320px;
 }
 
-.text-footer{
-    font-family: 'Playfair Display', serif;
+.text-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--primery-color);
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.wrapper {
+    max-width: auto;
+    margin: 0 auto;
+    padding-inline: 1em;
+    margin-bottom: 6rem;
 }

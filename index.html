@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Normalize.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,51 +13,68 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <title> Main page of Ninja Mail</title>
+    <title class="sr-only"> Main page of Ninja Mail</title>
 </head>
 
 <body>
     <header>
-        <a href="#"> <img src="image/mail.png" alt=""></a>
-        <a href="#"> <img src="image/NinjaMail.png" alt=""></a>
-        <button class="button-paint"> SIGN UP FREE </button>
+        <div class="header">
+            <div class="logo">
+                <a href="#" class="logo"> <img src="image/LOGO.svg" alt="ЛОГОТИП"> </a>
+            </div>
+            <button class="button-paint"> SIGN UP FREE </button>
+        </div>
     </header>
 
     <main>
         <h1 class="sr-only"> Main page on NinjaMain </h1>
         <section>
             <h2 class="sr-only"> Call to action </h2>
-            <p class="heading"> CREATE STUNNING EMAIL CAMPAIGNS </p>
-            <img src="image/photo-1544717302-de2939b7ef71 (image).png" alt="фото печатающей девушки">
-            <p> Create and launch email campaigns that captivate your customers in just a few clicks. </p>
-            <a href="#" class="link-butt1"> TRY NOW </a>
-            <a href="#" class="link-butt2"> GET A DEMO </a>
-        </section>
-        <section>
-            <h2 class="sr-only"> attracting clients </h2>
-            <p class="heading-1"> Reach More Customers </p>
-            <img src="image/VIDEO (image).png" alt="Видео с людьми">
-            <a href="#" class="link-butt3"> LEARN NOW </a>
+            <div>
+                <p class="heading"> CREATE STUNNING EMAIL CAMPAIGNS </p>
+                <img src="image/photo-1544717302-de2939b7ef71 (image).png" alt="фото печатающей девушки"
+                    class="image-girl">
+            </div>
+            <p style="margin: 16px 9px;"> Create and launch email campaigns that captivate your customers in
+                just a few
+                clicks. </p>
+            <div class="div-link-butt-1-2">
+                <a href="#" class="link-butt1"> TRY NOW </a>
+                <a href="#" class="link-butt2"> GET A DEMO </a>
+            </div>
         </section>
 
         <section>
-            <h2 class="heading-2"> The source for proven, engaging email campaigns</h2>
-            <p> Whether you’re a startup, small business, e-commerce store, or want to promote your app,
-                NinjaMail has
-                the feature set tailored for your business.
-            </p>
-            <div>
+            <h2 class="sr-only"> attracting clients </h2>
+            <div class="image-conteiner">
+                <p class="heading-1"> Reach More Customers </p>
+                <img src="image/VIDEO (image).png" alt="Видео с людьми" class="image-video">
+                <a href="#" class="link-butt3"> LEARN NOW </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="div-card1">
                 <img src="image/photo.png" alt="фото девушки">
-                <p> Launch campaigns but also find new customers. Our unique platform handles campaigns from start to
+                <p class="card-description"> Launch campaigns but also find new customers. Our unique platform handles campaigns from start to
                     end. </p>
                 <a href="#" class="link1"> Learn More > </a>
             </div>
 
-            <div>
+            <div class="div-card1">
                 <img src="image/photo1.png" alt="фото людей за работой">
-                <p> Start building and sharing with your team today. NinjaMail is renowned for its industry leading team
+                <p class="card-description"> Start building and sharing with your team today. NinjaMail is renowned for its industry leading team
                     collaboration tools. </p>
                 <a href="#" class="link1"> Learn More > </a>
+            </div>
+
+            <div class="div-heading-2">
+                <h2 class="heading-2"> The source for proven, engaging email campaigns</h2>
+                <p style="margin: 0%; width: 203px;"> Whether you’re a startup, small business, e-commerce store, or
+                    want to promote your app,
+                    NinjaMail has
+                    the feature set tailored for your business.
+                </p>
             </div>
         </section>
 
