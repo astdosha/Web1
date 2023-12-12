@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="width">
 
 <head>
     <meta charset="UTF-8">
@@ -9,16 +9,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <title class="sr-only"> Main page of Ninja Mail</title>
 </head>
 
-<body>
+<body class="width">
     <header>
-        <div class="header">
+        <div class="flex-align-center header">
             <div class="logo">
                 <a href="#" class="logo"> <img src="image/LOGO.svg" alt="ЛОГОТИП"> </a>
             </div>
@@ -38,7 +38,7 @@
             <p style="margin: 16px 9px;"> Create and launch email campaigns that captivate your customers in
                 just a few
                 clicks. </p>
-            <div class="div-link-butt-1-2">
+            <div class="flex-align-center div-link-butt-1-2">
                 <a href="#" class="link-butt1"> TRY NOW </a>
                 <a href="#" class="link-butt2"> GET A DEMO </a>
             </div>
@@ -46,29 +46,31 @@
 
         <section>
             <h2 class="sr-only"> attracting clients </h2>
-            <div class="image-conteiner">
+            <div class="flex-center image-conteiner">
                 <p class="heading-1"> Reach More Customers </p>
                 <img src="image/VIDEO (image).png" alt="Видео с людьми" class="image-video">
                 <a href="#" class="link-butt3"> LEARN NOW </a>
             </div>
         </section>
 
-        <section>
-            <div class="div-card1">
+        <section style="display: flex; flex-direction: column;">
+            <div class="flex-justify-center div-card1">
                 <img src="image/photo.png" alt="фото девушки">
-                <p class="card-description"> Launch campaigns but also find new customers. Our unique platform handles campaigns from start to
+                <p class="card-description"> Launch campaigns but also find new customers. Our unique platform
+                    handles campaigns from start to
                     end. </p>
                 <a href="#" class="link1"> Learn More > </a>
             </div>
 
-            <div class="div-card1">
+            <div class="flex-justify-center div-card2">
                 <img src="image/photo1.png" alt="фото людей за работой">
-                <p class="card-description"> Start building and sharing with your team today. NinjaMail is renowned for its industry leading team
+                <p class="card-description"> Start building and sharing with your team today. NinjaMail is renowned
+                    for its industry leading team
                     collaboration tools. </p>
                 <a href="#" class="link1"> Learn More > </a>
             </div>
 
-            <div class="div-heading-2">
+            <div class="flex-justify-center div-heading-2">
                 <h2 class="heading-2"> The source for proven, engaging email campaigns</h2>
                 <p style="margin: 0%; width: 203px;"> Whether you’re a startup, small business, e-commerce store, or
                     want to promote your app,
@@ -78,79 +80,96 @@
             </div>
         </section>
 
-        <section>
+        <section style="display: flex; flex-direction: column; align-items: center;">
             <h2 class="sr-only"> Member since </h2>
-            <div>
-                <img src="image/photo_Frankie.png" alt="фото Франки">
+            <div class="member-card">
                 <a href="#" class="title_link"> Frankie </a>
-                <p class="heading-1"> Member since 2016 </p>
-            </div>
-            <div class="div">
-                <img src="image/Camile_img.png" alt="Фото камиллы">
-                <a href="#" class="title_link"> Camile </a>
-                <p class="heading-1"> Member since 2012 </p>
+                <p class="heading-10"> Member since 2016 </p>
             </div>
 
-            <div>
-                <img src="image/photo_Elayne.png" alt="Фото Элин">
+            <div class="member-card member-card_two">
+                <a href="#" class="title_link"> Camile </a>
+                <p class="heading-10"> Member since 2012 </p>
+            </div>
+
+            <div class="member-card member-card_three">
                 <a href="#" class="title_link"> Elayne </a>
-                <p class="heading-1"> Member since 2018 </p>
+                <p class="heading-10"> Member since 2018 </p>
             </div>
 
         </section>
 
-        <section>
+        <section class="flex-center flex-column">
             <h2 class="sr-only"> Join ouar list </h2>
-            <p class="heading-2"> Learn how others are reaching their audience easier than ever before.</p>
-            <form>
+            <p class="heading-4"> Learn how others are reaching their audience easier than ever before.</p>
+            <form class="flex-center flex-column">
                 <label>
-                    <input type="text" name="email" placeholder="Enter you email">
+                    <input class="input" type="text" name="email" placeholder="Enter you email">
                 </label>
-                <p> Thanks! Email received </p>
+                <p class="message"> Thanks! Email received </p>
                 <button class="button-paint1"> JOIN OUR LIST </button>
             </form>
         </section>
 
-        <section>
+        <section class="flex-center flex-column">
             <h2 class="sr-only"> Brands </h2>
-            <p class="heading-2"> All the best brands already use us.</p>
-            <img src="#" alt="dragon eye">
-            <img src="#" alt="gamecommer">
-            <img src="#" alt="last knight">
-            <img src="#" alt="radio tee">
-            <img src="#" alt="uest ai">
+            <p class="heading-4"> All the best brands already use us.</p>
+            <div class="flex-center brand-row">
+                <div class="flex-center flex-column brand-column">
+                    <img src=image/brands/dragon-eye.png alt="dragon eye" width="55" height="29">
+                    <img src="image/brands/last-knight.png" alt="last knight" width="104" height="22">
+                </div>
+                <div class="flex-center flex-column brand-column">
+                    <img src="image/brands/gamecommer.png" alt="gamecommer" width="91" height="15">
+                    <img src="image/brands/radio-tee.png#" alt="radio tee" width="92" height="17">
+                </div>
+            </div>
+            <div class="flex-center brand-column">
+                <div class="flex-center flex-column brand-column">
+                    <img src="image/brands/uest-ai.png" alt="uest ai" width="94" height="31">
+                </div>
+            </div>
         </section>
 
-        <section class="section">
+        <section class="flex-center flex-column section">
             <h2 class="sr-only"> start </h2>
             <p class="heading-3"> Get started today! </p>
-            <a href="#" class="link2"> PICK A PLAN </a>
+            <a href="#" class="flex-center link2"> PICK A PLAN </a>
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
         <section>
             <h3 class="sr-only"> Site navigation </h3>
-            <img src="#" alt="Logo">
-            <a href="#" class="brands-link"> Features </a>
-            <a href="#" class="brands-link"> Pricing </a>
-            <a href="#" class="brands-link"> Services </a>
-            <a href="#" class="brands-link"> Partners </a>
-            <a href="#" class="brands-link"> About Us </a>
-            <a href="#" class="brands-link"> Tutorials </a>
-            <a href="#" class="brands-link"> Resources </a>
-            <a href="#" class="brands-link"> Help Center </a>
-            <a href="#" class="brands-link"> Templates </a>
-            <a href="#" class="brands-link"> Case Studies </a>
-            <a href="#" class="brands-link"> Medium </a>
-            <a href="#" class="brands-link"> Twitter </a>
-            <a href="#" class="brands-link"> Facebook </a>
-            <a href="#" class="brands-link"> Instagram </a>
-            <a href="#" class="brands-link"> LinkedIn </a>
-            <a href="#" class="brands-link"> Contact Us </a>
-            <a href="#" class="brands-link"> Slack </a>
-            <a href="#" class="brands-link"> Jobs </a>
+            <img class="logo-2" src="image/LOGO.svg" alt="Logo">
+
+            <div class="flex-row">
+                <div class="navigation-column">
+                    <a href="#" class="brands-link"> Features </a>
+                    <a href="#" class="brands-link"> Pricing </a>
+                    <a href="#" class="brands-link"> Services </a>
+                    <a href="#" class="brands-link"> Partners </a>
+                    <a href="#" class="brands-link"> About Us </a>
+                    <a href="#" class="brands-link"> Tutorials </a>
+                    <a href="#" class="brands-link"> Resources </a>
+                    <a href="#" class="brands-link"> Help Center </a>
+                    <a href="#" class="brands-link"> Templates </a>
+                    <a href="#" class="brands-link"> Case Studies </a>
+                </div>
+                <div class="navigation-column">
+                    <a href="#" class="brands-link"> Medium </a>
+                    <a href="#" class="brands-link"> Twitter </a>
+                    <a href="#" class="brands-link"> Facebook </a>
+                    <a href="#" class="brands-link"> Instagram </a>
+                    <a href="#" class="brands-link"> LinkedIn </a>
+                    <a href="#" class="brands-link"> Contact Us </a>
+                    <a href="#" class="brands-link"> Slack </a>
+                    <a href="#" class="brands-link"> Jobs </a>
+                </div>
+            </div>
         </section>
+
+        <hr class="hr" />
 
         <section>
             <p class="text-footer"> NinjaMail is a sample project for Quest AI.</p>

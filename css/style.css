@@ -3,6 +3,8 @@
     --primery-color: black;
     --two-color: white;
     --green-color: #4BA87D;
+    --grey-color: #9F9F9F;
+    --light-grey-color: #DBDBDB;
 }
 
 
@@ -10,6 +12,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+.width{
+    min-width: 100%;
+    margin: 0;
 }
 
 
@@ -28,8 +35,6 @@ body {
 
 
 .header {
-    display: flex;
-    align-items: center;
     gap: 30px;
     margin: 16px auto;
     justify-content: space-between;
@@ -65,8 +70,6 @@ body {
 }
 
 .div-link-butt-1-2 {
-    display: flex;
-    align-items: center;
     gap: 14px;
     margin: 16px auto;
     justify-content: space-between;
@@ -107,15 +110,27 @@ body {
 }
 
 .div-card1 {
-    display: flex;
     width: 209px;
     height: 294px;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    align-self: flex-start;
+    margin-left: 12px;
+    background-color: var(--two-color);
+}
+
+.section-card-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-card2 {
+    width: 209px;
+    height: 294px;
+    flex-direction: column;
+    margin-top: 30px;
+    align-self: flex-end;
+    margin-right: 12px;
     background-color: var(--two-color);
 }
 
@@ -143,6 +158,9 @@ body {
     font-weight: 900;
     font-size: 1.3rem;
     text-decoration: none;
+    display: block;
+    width: 130px;
+    height: 42px;
 }
 
 .brands-link {
@@ -181,9 +199,6 @@ body {
 }
 
 .image-conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     margin-top: 42px;
 }
@@ -194,6 +209,45 @@ body {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+}
+
+.member-card {
+    height: 157px;
+    width: 223px;
+    background: url('../image/photo_Frankie.png');
+    margin-bottom: 21px;
+}
+
+.member-card_three {
+    background: url('../image/photo_Elayne.png');
+}
+
+.member-card_two {
+    background: url('../image/Camile_img.png');
+}
+
+
+.title_link {
+    width: 87px;
+    height: 29px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--two-color);
+    font-size: 2.6rem;
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+    margin-top: 100px;
+    margin-left: 17px;
+}
+
+.heading-10 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: var(--two-color);
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 3px;
+    margin-left: 17px;
 }
 
 .heading-1 {
@@ -213,21 +267,19 @@ body {
 }
 
 .div-heading-2 {
-    display: flex;
     width: 232px;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     gap: 17px;
     margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 47px;
 
 }
 
 .heading-2 {
     display: block;
-    /* width: 232px; */
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--primery-color);
@@ -240,20 +292,25 @@ body {
     font-weight: 900;
     color: var(--two-color);
     font-size: 4.2rem;
-    align-items: center;
+    text-align: center;
+    margin-top: -42px;
 }
 
-.title_link {
-    font-family: 'Raleway', sans-serif;
+.heading-4 {
+    max-width: 239px;
+    max-height: 155px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
     color: var(--primery-color);
-    font-size: 2.2rem;
-    font-weight: 900;
-    text-decoration: none;
+    font-size: 2.6rem;
+    margin-top: 64px;
+    margin-bottom: 16px ;
 }
 
 .section {
+    margin-top: 64px;
+    padding: 60px 0;
     background-color: var(--green-color);
-    width: 320px;
 }
 
 .text-footer {
@@ -268,4 +325,78 @@ body {
     margin: 0 auto;
     padding-inline: 1em;
     margin-bottom: 6rem;
+}
+
+.input {
+    min-width: 192px;
+    padding: 14px;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+}
+
+.message {
+    margin: 6px 0;
+    color: var(--green-color);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.brand-row {
+    width: 100%;
+}
+.brand-column {
+    width: 100%;
+}
+
+.brand-column img {
+    margin: 28px;
+}
+
+.logo-2 {
+    margin-top: 60px;
+    margin-bottom: 16px;
+    margin-left: -16px;
+}
+
+.navigation-column {
+    width: 100%;
+}
+
+.navigation-column a {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.hr {
+    margin: 24px 0;
+    border-color: var(--light-grey-color);
+    border-style: solid;
+}
+
+.footer {
+    padding: 16px;
 }
