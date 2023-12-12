@@ -174,9 +174,9 @@ body {
 }
 
 .heading {
-    display: block;
+    display: flex;
     position: absolute;
-    margin-top: -50px;
+    margin-top: 7px;
     line-height: 46px;
     padding-right: 27px;
     padding-left: 8px;
@@ -184,18 +184,14 @@ body {
     font-weight: 700;
     color: var(--primery-color);
     font-size: 3.6rem;
-    z-index: 9999;
 }
 
 .image-girl {
-    display: block;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-left: 9px; */
-    align-items: center;
-    margin-bottom: auto;
-    position: relative;
+    margin-top: 59px;
+    height: 171px;
+    width: 304px;
+    margin-bottom: 33px;
+    background: url('../image/photo-1544717302-de2939b7ef71\ \(image\).png');
 }
 
 .image-conteiner {
@@ -204,11 +200,10 @@ body {
 }
 
 .image-video {
-    display: flex;
-    width: max-content;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    height: 171px;
+    width: 304px;
+    margin-bottom: 33px;
+    background: url('../image/VIDEO\ \(image\).png');
 }
 
 .member-card {
@@ -321,11 +316,12 @@ body {
 }
 
 .wrapper {
-    max-width: auto;
-    margin: 0 auto;
-    padding-inline: 1em;
-    margin-bottom: 6rem;
-}
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
 .input {
     min-width: 192px;
@@ -399,4 +395,16 @@ body {
 
 .footer {
     padding: 16px;
+}
+
+.bacground-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.green-background {
+    display: flex;
+    flex-direction: column;
+    background: url(../image/Background.png);
 }
