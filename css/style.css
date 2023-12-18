@@ -191,7 +191,7 @@ body {
     height: 171px;
     width: 304px;
     margin-bottom: 33px;
-    background: url('../image/photo-1544717302-de2939b7ef71\ \(image\).png');
+    background: url('../image/hero_photo.jpg');
     box-shadow: 2px 2px 36px var(--light-grey-color);
 }
 
@@ -203,22 +203,22 @@ body {
 .image-video {
     height: 171px;
     width: 304px;
-    background: url('../image/VIDEO\ \(image\).png');
+    background: url('../image/VIDEO\ \(image\).jpg');
 }
 
 .member-card {
     height: 157px;
     width: 223px;
-    background: url('../image/photo_Frankie.png');
+    background: url('../image/photo_Frankie.jpg');
     margin-bottom: 21px;
 }
 
 .member-card_three {
-    background: url('../image/photo_Elayne.png');
+    background: url('../image/photo_Elayne.jpg');
 }
 
 .member-card_two {
-    background: url('../image/Camile_img.png');
+    background: url('../image/photo_Camile.jpg');
 }
 
 
