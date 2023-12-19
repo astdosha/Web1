@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="width">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/Normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;900&display=swap"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title class="sr-only"> Main page of Ninja Mail</title>
+</head>
+
+<body class="width">
+<header>
+    <div class="flex-align-center header">
+        <div class="logo">
+            <a href="#" class="logo"> <img src="image/LOGO.svg" alt="ЛОГОТИП"> </a>
+        </div>
+
+        <div class="flex-align-center">
+            <nav>
+                <a class="fort-l" href="#"><span>FEATURES</span><span class="underline"></span></a>
+                <a class="fort-l" href="#"><span>PRICING</span><span class="underline"></span></a>
+                <a class="fort-l" href="#"><span>SERVICES</span><span class="underline"></span></a>
+                <a class="fort-l" href="#"><span>PARTNERS</span><span class="underline"></span></a>
+            </nav>
+
+            <button class="button-paint"> SIGN UP FREE </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section>
+        <form class="register-form flex-center" method="post" action="//httpbin.org/post">
+            <div>
+                <fieldset class="fieldset">
+                    <legend>Личная информация</legend>
+                    <label>
+                        Имя *
+                        <input class="input" type="text" name="name" placeholder="Введите имя" required>
+                    </label>
+                    <label>
+                        Дата рождения *
+                        <input class="input" type="date" name="birth" placeholder="Введите дату рождения" required>
+                    </label>
+                    <label>
+                        Пол <br/>
+                        <input type="radio" name="sex" value="М"> М
+                        <input type="radio" name="sex" value="Ж"> Ж
+                    </label>
+                    <label>
+                        Пароль *
+                        <input class="input" type="password" name="password" placeholder="Введите пароль" required>
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Контактные данные</legend>
+                    <label>
+                        Email *
+                        <input class="input" type="email" name="email" placeholder="Введите email" required>
+                    </label>
+                    <label>
+                        Телефон
+                        <input class="input" type="tel" name="phone" placeholder="Введите телефон">
+                    </label>
+                    <label>
+                        Удобный интервал для связи
+                        <select class="input" name="communication_interval">
+                            <option>Утро</option>
+                            <option>День</option>
+                            <option>Вечер</option>
+                            <option>Ночь</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </div>
+            <button class="button-paint1" type="submit"> Зарегистрироваться </button>
+            <button class="button-paint1" type="reset"> Сброс </button>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <section class="navigation-section">
+        <h3 class="sr-only"> Site navigation </h3>
+        <img class="logo-2" src="image/LOGO.svg" alt="Logo">
+
+        <div class="flex-row">
+            <div class="navigation-column">
+                <div class="navigation-subcolumn">
+                    <a href="#" class="brands-link"> Features </a>
+                    <a href="#" class="brands-link"> Pricing </a>
+                    <a href="#" class="brands-link"> Services </a>
+                    <a href="#" class="brands-link"> Partners </a>
+                </div>
+                <div class="navigation-subcolumn">
+                    <a href="#" class="brands-link"> About Us </a>
+                    <a href="#" class="brands-link"> Tutorials </a>
+                    <a href="#" class="brands-link"> Resources </a>
+                    <a href="#" class="brands-link"> Help Center </a>
+                    <a href="#" class="brands-link"> Templates </a>
+                    <a href="#" class="brands-link"> Case Studies </a>
+                </div>
+            </div>
+            <div class="navigation-column">
+                <div class="navigation-subcolumn">
+                    <a href="#" class="brands-link"> Medium </a>
+                    <a href="#" class="brands-link"> Twitter </a>
+                    <a href="#" class="brands-link"> Facebook </a>
+                    <a href="#" class="brands-link"> Instagram </a>
+                    <a href="#" class="brands-link"> LinkedIn </a>
+                </div>
+                <div class="navigation-subcolumn">
+                    <a href="#" class="brands-link"> Contact Us </a>
+                    <a href="#" class="brands-link"> Slack </a>
+                    <a href="#" class="brands-link"> Jobs </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr" />
+
+    <section class="copyright-section">
+        <div>
+            <p class="text-footer font-s"> NinjaMail is a sample project for Quest AI.</p>
+            <p class="text-footer font-s"> © 2019 Quest AI, All rights reserved.</p>
+        </div>
+        <div>
+            <p class="text-footer font-s" style="margin-right: 24px"> Terms & Conditions </p>
+            <p class="text-footer font-s"> Privacy Policy </p>
+        </div>
+    </section>
+</footer>
+</body>
+
+</html>
