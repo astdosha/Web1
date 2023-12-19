@@ -1,5 +1,10 @@
+/**
+    phone - 320px
+    tablet - 768px
+    laptop - 1440px
+*/
+
 :root {
-    font-size: 62.5%;
     --primery-color: black;
     --two-color: white;
     --green-color: #4BA87D;
@@ -11,7 +16,50 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+}
+
+/* font-size */
+/* до монитора */
+@media screen and (max-width: 1439px) {
+    body {
+        font-size: 12px;
+    }
+    button {
+        font-size: 13px;
+    }
+    .font-s {
+        font-size: 9px;
+    }
+    .font-l {
+        font-size: 22px;
+    }
+    .font-xl {
+        font-size: 28px;
+    }
+    .font-xxl {
+        font-size: 36px;
+    }
+}
+/* от монитора */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 19px;
+    }
+    button {
+        font-size: 21px;
+    }
+    .font-s {
+        font-size: 15px;
+    }
+    .font-l {
+        font-size: 34px;
+    }
+    .font-xl {
+        font-size: 44px;
+    }
+    .font-xxl {
+        font-size: 59px;
+    }
 }
 
 .width{
@@ -39,6 +87,43 @@ body {
     margin: 16px auto;
     justify-content: space-between;
 }
+header nav {
+    display: flex;
+}
+header nav a {
+    font-weight: bold;
+    margin-right: 16px;
+    color: var(--primery-color);
+    text-decoration: none;
+}
+header nav a span {
+    padding: 0 4px;
+}
+.underline {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--green-color);
+}
+
+/* до планшета */
+@media screen and (max-width: 767px) {
+    header nav {
+        display: none;
+    }
+}
+/* до монитора */
+@media screen and (max-width: 1439px) {
+    .underline {
+        height: 3px;
+    }
+}
+/* от монитора */
+@media screen and (min-width: 1440px) {
+    .underline {
+        height: 5px;
+    }
+}
 
 .logo {
     display: inline-block;
@@ -49,30 +134,20 @@ body {
 .button-paint {
     display: inline-block;
     margin-right: 12px;
-    height: 25px;
-    width: 110px;
+    padding: 4px 12px;
     color: var(--two-color);
     background-color: var(--green-color);
     border: none;
-    font-size: 1.1rem;
     font-weight: 800;
 }
 
 .button-paint1 {
     height: 42px;
-    width: 144px;
     color: var(--two-color);
     background-color: var(--green-color);
     border: none;
-    font-size: 1.1rem;
     font-weight: 800;
     text-decoration: none;
-}
-
-.div-link-butt-1-2 {
-    gap: 14px;
-    margin-top: 26px;
-    justify-content: space-between;
 }
 
 .link-butt1 {
@@ -81,20 +156,16 @@ body {
     background-color: var(--green-color);
     font-weight: 700;
     text-decoration: none;
-    font-size: 1.3rem;
     padding: 13px 40px;
-    margin-left: auto;
 }
 
 .link-butt2 {
     font-family: 'Raleway', sans-serif;
     border: 3px solid var(--green-color);
     color: var(--green-color);
-    font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
     padding: 10px 27px;
-    margin-right: auto;
 }
 
 .link-butt3 {
@@ -103,20 +174,51 @@ body {
     background-color: var(--two-color);
     color: var(--green-color);
     font-weight: 700;
-    font-size: 0.6rem;
     text-decoration: none;
-    padding: 7px 13px;
+    padding: 10px 16px;
     margin-bottom: -85px;
 }
 
-.div-card1 {
+.div-card {
     width: 209px;
     height: 294px;
     flex-direction: column;
-    margin-top: 30px;
-    align-self: flex-start;
-    margin-left: 12px;
-    background-color: var(--two-color);
+}
+
+/* до планшета */
+@media screen and (max-width: 767px) {
+    .div-card1 {
+        align-self: flex-start;
+        margin-top: 24px;
+    }
+    .div-card2 {
+        align-self: flex-end;
+        margin-top: 12px;
+    }
+    .div-heading-2 {
+        margin-top: 18px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .post-block {
+        margin-top: 48px;
+        flex-direction: row !important;
+    }
+    .div-card1 {
+
+    }
+    .div-card2 {
+        margin-top: 48px;
+        margin-left: 24px;
+    }
+    .div-heading-2 {
+        margin-top: -12px;
+        margin-left: 24px;
+    }
 }
 
 .section-card-1 {
@@ -124,19 +226,8 @@ body {
     flex-direction: column;
 }
 
-.div-card2 {
-    width: 209px;
-    height: 294px;
-    flex-direction: column;
-    margin-top: 30px;
-    align-self: flex-end;
-    margin-right: 12px;
-    background-color: var(--two-color);
-}
-
 .card-description {
     display: block;
-    margin: 0%;
     width: 164px;
     margin: 17px 25px 17px 20px;
 }
@@ -146,7 +237,6 @@ body {
     font-family: 'Raleway', sans-serif;
     color: var(--green-color);
     font-weight: 800;
-    font-size: 1.2rem;
     text-decoration: none;
     margin: 0% 25px 13px 20px;
 }
@@ -156,42 +246,106 @@ body {
     color: var(--green-color);
     background-color: var(--two-color);
     font-weight: 900;
-    font-size: 1.3rem;
     text-decoration: none;
     display: block;
-    width: 130px;
     height: 42px;
+    padding: 0 24px;
 }
 
 .brands-link {
-
     font-family: 'Raleway', sans-serif;
     color: var(--primery-color);
-    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-
 }
 
 .heading {
-    display: flex;
-    position: absolute;
-    margin-top: -39px;
-    line-height: 46px;
-    padding-right: 27px;
-    padding-left: 8px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--primery-color);
-    font-size: 3.6rem;
+}
+.image-block {
+    width: 100%;
+}
+.image-block .heading {
+    position: absolute;
+    top: 39px;
+}
+
+/* до планшета */
+@media screen and (max-width: 767px) {
+    .image-block .heading {
+        display: flex;
+    }
+    .heading-card .heading {
+        display: none;
+    }
+    .div-link-butt-1-2 {
+        margin-top: 26px;
+        gap: 14px;
+    }
+    .div-link-butt-1-2 > * {
+        width: 100%;
+    }
+}
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .image-block .heading {
+        display: none;
+    }
+    .heading-card .heading {
+        display: flex;
+        margin-bottom: 12px;
+    }
+    .div-link-butt-1-2 {
+        margin-top: 12px;
+        gap: 30px;
+    }
+    .div-link-butt-1-2 > * {
+        width: 140px;
+    }
+    .block-1 {
+        display: grid !important;
+        grid-template-columns: repeat(16, 1fr);
+    }
+    .image-block {
+        grid-column: 8 / 17;
+        grid-row: 1 / 2;
+    }
+    .heading-card {
+        grid-column: 1 / 9;
+        grid-row: 1 / 2;
+    }
+}
+
+.bacground-image {
+    display: flex;
+    flex-direction: column;
+}
+.bacground-image img {
+    width: 100%;
+}
+/* до монитора */
+@media screen and (max-width: 767px) {
+    .bacground-image {
+        padding: 0 12px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px)  {
+    .bacground-image {
+        padding: 0 24px;
+    }
+}
+/* от монитора */
+@media screen and (min-width: 1440px) {
+    .bacground-image {
+        padding: 0 200px;
+    }
 }
 
 .image-girl {
     margin-top: 59px;
-    height: 171px;
-    width: 304px;
     margin-bottom: 33px;
-    background: url('../image/hero_photo.jpg');
     box-shadow: 2px 2px 36px var(--light-grey-color);
 }
 
@@ -200,10 +354,19 @@ body {
     margin-top: 42px;
 }
 
-.image-video {
-    height: 171px;
-    width: 304px;
-    background: url('../image/VIDEO\ \(image\).jpg');
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .image-conteiner img {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .people-block {
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
 }
 
 .member-card {
@@ -211,6 +374,9 @@ body {
     width: 223px;
     background: url('../image/photo_Frankie.jpg');
     margin-bottom: 21px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
 }
 
 .member-card_three {
@@ -223,15 +389,11 @@ body {
 
 
 .title_link {
-    width: 87px;
-    height: 29px;
     font-family: 'Raleway', sans-serif;
     color: var(--two-color);
-    font-size: 2.6rem;
     font-weight: 900;
     text-decoration: none;
     display: block;
-    margin-top: 100px;
     margin-left: 17px;
 }
 
@@ -239,8 +401,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: var(--two-color);
-    font-size: 1.2rem;
-    margin: 0;
     margin-top: 3px;
     margin-left: 17px;
 }
@@ -254,11 +414,27 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--two-color);
-    font-size: 2.2rem;
     margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
-
+}
+/* до планшета */
+@media screen and (max-width: 767px) {
+    .heading-1 {
+        font-size: 22px;
+    }
+}
+/* планшет */
+@media screen and (min-width: 768px) and (max-width: 1439px)  {
+    .heading-1 {
+        font-size: 38px;
+    }
+}
+/* от монитора */
+@media screen and (min-width: 1440px) {
+    .heading-1 {
+        font-size: 46px;
+    }
 }
 
 .div-heading-2 {
@@ -266,10 +442,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 17px;
-    margin-top: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 47px;
 
 }
 
@@ -278,7 +450,6 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: var(--primery-color);
-    font-size: 2.6rem;
     margin: 0%;
 }
 
@@ -286,20 +457,30 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     color: var(--two-color);
-    font-size: 4.2rem;
     text-align: center;
     margin-top: -42px;
 }
 
 .heading-4 {
-    max-width: 239px;
     max-height: 155px;
+    padding: 0 48px;
     text-align: center;
     font-family: 'Playfair Display', serif;
     color: var(--primery-color);
-    font-size: 2.6rem;
     margin-top: 26px;
     margin-bottom: 16px ;
+}
+/* планшет */
+@media screen and (min-width: 768px) and (max-width: 1439px)  {
+    .heading-4 {
+        max-width: 600px;
+    }
+}
+/* от монитора */
+@media screen and (min-width: 1440px) {
+    .heading-4 {
+        max-width: 900px;
+    }
 }
 
 .section {
@@ -311,7 +492,6 @@ body {
 .text-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--primery-color);
-    font-size: 0.9rem;
     font-weight: bold;
 }
 
@@ -366,6 +546,23 @@ body {
 }
 .brand-column {
     width: 100%;
+    display: flex;
+
+}
+/* до планшета */
+@media screen and (max-width: 767px) {
+    .brand-column {
+        flex-direction: column;
+    }
+}
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .brand-list {
+        display: flex;
+    }
+    .brand-column {
+        flex-direction: row;
+    }
 }
 
 .brand-column img {
@@ -373,7 +570,6 @@ body {
 }
 
 .logo-2 {
-    margin-top: 60px;
     margin-bottom: 16px;
     margin-left: -16px;
 }
@@ -387,6 +583,13 @@ body {
     margin-bottom: 6px;
 }
 
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .navigation-column {
+        display: flex;
+    }
+}
+
 .hr {
     margin: 24px 0;
     border-color: var(--light-grey-color);
@@ -397,10 +600,22 @@ body {
     padding: 16px;
 }
 
-.bacground-image{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.navigation-section {
+    margin-top: 48px;
+}
+
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .logo-2 {
+        margin-top: -86px;
+    }
+    .navigation-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation-subcolumn {
+        margin: 0 16px;
+    }
 }
 
 .green-background {
@@ -410,7 +625,51 @@ body {
 }
 
 .form {
-    margin-bottom: 30px;
+    display: flex;
+}
+/* до планшета */
+@media screen and (max-width: 767px) {
+    .form {
+        flex-direction: column;
+    }
+    .button-paint1 {
+        width: 144px;
+    }
+}
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .form {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .input {
+        min-width: 275px;
+    }
+    .button-paint1 {
+        width: 184px;
+    }
+}
+
+.copyright-section {
+    display: flex;
+    gap: 16px;
+}
+/* до планшета */
+@media screen and (max-width: 767px) {
+    .copyright-section {
+        flex-direction: column;
+    }
+}
+/* от планшета */
+@media screen and (min-width: 768px) {
+    .copyright-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    .copyright-section > * {
+        display: flex;
+    }
 }
 
 .laba {
