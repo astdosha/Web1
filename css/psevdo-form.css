@@ -1,0 +1,11 @@
+.logo {
+    transform: rotate(30deg) scale(150%) skew(5deg, 10deg);
+}
+
+input:checked + span {
+    font-weight: bold;
+}
+
+input:required {
+    border-color: var(--green-color);
+}
