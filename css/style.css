@@ -60,6 +60,18 @@ body {
     .font-xxl {
         font-size: 59px;
     }
+    header{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .image-conteiner img {
+        max-width: 1400px;
+    }
+
+    .image-girl{
+        max-width: 80%;
+    }
 }
 
 .width{
