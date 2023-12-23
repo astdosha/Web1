@@ -67,6 +67,7 @@ body {
 
     .image-conteiner img {
         max-width: 1400px;
+        margin-bottom: 80px;
     }
 
     .image-girl{
@@ -364,6 +365,7 @@ header nav a span {
 .image-conteiner {
     position: relative;
     margin-top: 42px;
+    margin-bottom: 20px;
 }
 
 /* от планшета */
@@ -541,6 +543,7 @@ header nav a span {
 .flex-justify-center {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .flex-column {

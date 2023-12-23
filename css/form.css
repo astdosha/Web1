@@ -17,3 +17,8 @@ label {
 button {
     margin-top: 12px;
 }
+
+.radio{
+    display: flex;
+    margin: 0;
+}

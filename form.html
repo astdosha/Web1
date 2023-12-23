@@ -53,11 +53,21 @@
                         Дата рождения *
                         <input class="input" type="date" name="birth" placeholder="Введите дату рождения" required>
                     </label>
-                    <label>
-                        Пол <br/>
+
+                    <label for="sex-male">
+                        <p style="margin: 0;"> Пол </p>
+                        <input type="radio" id="sex-male" name="sex" value="М"><span>М</span>
+                      </label>
+                      
+                      <label for="sex-female">
+                        <p class="sr-only"> Пол </p>
+                        <input type="radio" id="sex-female" name="sex" value="Ж"> <span>Ж</span>
+                      </label>
+                    <!-- <label>
+                        Пол
                         <input type="radio" name="sex" value="М"><span>М</span>
                         <input type="radio" name="sex" value="Ж"><span>Ж</span>
-                    </label>
+                    </label> -->
                     <label>
                         Пароль *
                         <input class="input" type="password" name="password" placeholder="Введите пароль" required>
